@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilusionismo</title>
+    <link rel="StyleSheet" href="../css/formulario.css"> 
+    <script src="../js/recogerDatos.js"></script>
+</head>
+<body>
+    <h1 class="tituloPagina">Formulario</h1>
+    <header> 
+        <script>
+        window.alert("Rellena el formulario de inscripción");
+        </script>
+
+        <nav class="menu">
+            <ul style="display:inline;">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+</header>
+    <main>
+        <div>
+        <form action="#" target="" method="get" name="formDatosPersonales">
+            
+            <h2>Datos personales</h2><br>
+
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="nombre" name="fname"><br><br>
+
+            <label for="lname">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="lname"><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="text" id="telefono" name="fname"><br><br>
+
+            <label for="date">Año de nacimiento</label><br>
+            <input type="date" id="año" name="lname"><br><br>
+
+            <label for="fname">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="lname"><br><br>
+
+            <label for="fname">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="lname" required><br><br>
+            
+            <label for="fname">Hora:</label>
+            <input type="time" id="hora" name="hora"><br><br>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea><br><br>
+            
+            <label for="fname">Sexo:</label><br>
+            <input type="radio" id="SexoM" name="fav_language" value="Sexo">
+            <label for="masculino">Maculino</label><br>
+            
+            <input type="radio" id="SexoM" name="fav_language" value="Sexo">
+            <label for="femenino">Femenino</label><br>
+
+            <input type="radio" id="SexoO" name="fav_language" value="Sexo">
+            <label for="otro">Otro</label><br><br>
+           
+            <label for="fname">Tipo de contacto:</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="telefono">Teléfono</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="correo">Correo electrónico</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="mensaje">Mensaje</label><br><br>
+
+                <label for="vehicle3">Elige un color:</label>
+                <input type="color" name="colorElegido" value="#ff0000"><br><br>
+
+                <label for="fname">Elige tu curso:</label>
+                <select name="menu">
+                    <option selected>...</option>
+                    <optgroup label="1º.Año">
+                      <option value="1">Cartomagia</option>
+                      <option value="2">Mentalismo</option>
+                      <option value="3">Numismagia</option>
+                      <option value="4">Magia de cerca</option>
+                      <option value="5">Magia de salón</option>
+
+                    </optgroup>
+                    <optgroup label="2º.Año">
+                      <option value="4">Hipnosis</option>
+                      <option value="5">Magia de escenario</option>
+                      <option value="6">Magia con palomas</option>
+                      <option value="6">Grandes ilusiones</option>
+                      <option value="6">Historia de la magia</option>
+                    </optgroup>
+                  </select><br><br>
+                
+                <label for="fname"> Indique su nivel (Principiante, Inetermedio, Avanzado, Profesional):</label><br>
+                <input type="range" name="rango"
+                  min="1" max="4" list="lista-rango">
+                <datalist id="lista-rango">
+                    <option value="1" label="Principiante">
+                    <option value="2" label="Inetermedio">
+                    <option value="3" label="Avanzado">
+                    <option value="4" label="Profesional">
+                </datalist><br><br>
+
+            <button type="button" onclick="recogerDatos()">Enviar Datos</button>
+            <input type="reset" value="Cancelar">
+                <br><br>
+            
+            <button type="button" onclick="myFunction()" >Aprietame</button>
+
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+
+            <script>
+                function myFunction() {
+                    document.getElementById("demo1").innerHTML = "Página web de Jose Sanandrés";
+                }
+            </script>
+
+        </form>
+        </div>
+
+        <div id="resultado">
+            
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/?hl=es" target="_blank">
+                <img src="../multimedia/instagram.svg" id="instagram">
+            </a>
+            <a href="https://es-es.facebook.com/" target="_blank">
+                <img src="../multimedia/facebook.svg" id="facebook">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="../multimedia/github.svg" id="gitHub">
+            </a>
+            <a href="https://www.tiktok.com/es/" target="_blank">
+                <img src="../multimedia/tiktok.svg" id="tiktok">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="../multimedia/youtube.svg" id="youtube">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
